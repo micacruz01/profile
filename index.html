@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Personal Portfolio</title>
-  <link rel="stylesheet" href="style.css" /> <!-- Corrected filename -->
+  <title>Micaela Cruz | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header class="header">
   <h1 class="name">Micaela Cruz</h1>
+  <p class="tagline">BSIT Student | Web Development</p>
+
   <nav class="navigation">
     <ul>
-      <li><a href="#about">About Me</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#objective">Objective</a></li>
       <li><a href="#education">Education</a></li>
-      <li><a href="#work">Work Experience</a></li>
+      <li><a href="#work">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -24,50 +26,80 @@
 </header>
 
 <main class="container">
+
   <!-- About Me -->
   <section id="about" class="section about">
-    <h2>About Me</h2>
-    <p>23 years of age. Born and raised in Baguio City.</p>
-    <div class="contact-info">
-      <p><strong>Email:</strong> cruzelamica71@gmail.com</p>
-      <p><strong>Phone:</strong> 09183220446</p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/micacruz" target="_blank">linkedin.com/in/micacruz</a></p>
+    <div class="about-grid">
+      <img src="picture/picture.jpg" alt="Micaela Cruz" class="profile-img" />
+
+      <div>
+        <h2>About Me</h2>
+        <p>
+          Hi! I’m <strong>Micaela “Mica” Cruz</strong>, a 3rd-year BSIT student at
+          the University of the Cordilleras, majoring in Web Development.
+          I enjoy learning new technologies and building simple, functional web projects.
+        </p>
+
+        <div class="contact-info">
+          <p><strong>Email:</strong> cruzelamica71@gmail.com</p>
+          <p><strong>Phone:</strong> 0918 322 0446</p>
+            <a href="https://linkedin.com/in/micacruz" target="_blank">linkedin.com/in/micacruz</a>
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Objective -->
-  <section id="objective" class="section objective">
+  <section id="objective" class="section">
     <h2>Objective</h2>
-    <p>To graduate and find an IT related job.</p>
+    <p>
+      To successfully graduate and secure an entry-level IT-related position
+      where I can apply my technical and communication skills.
+    </p>
   </section>
 
   <!-- Education -->
-  <section id="education" class="section education">
+  <section id="education" class="section">
     <h2>Education</h2>
-    <div class="education-item">
-      <h3>Bachelor of Science in Information Technology Major in Web Development</h3>
-      <p>University of The Cordilleras | Expected Graduation: August 2026</p>
+
+    <div class="card">
+      <h3>Bachelor of Science in Information Technology</h3>
+      <p><em>Major in Web Development</em></p>
+      <p>University of the Cordilleras</p>
+      <p>Expected Graduation: August 2026</p>
     </div>
-    <div class="education-item">
-      <h3>TVL Track - Information Technology and Animation</h3>
-      <p>University of The Cordilleras | Graduated Senior High School: August 2021</p>
+
+    <div class="card">
+      <h3>TVL Track – Information Technology & Animation</h3>
+      <p>University of the Cordilleras</p>
+      <p>Graduated: August 2021</p>
     </div>
   </section>
 
   <!-- Work Experience -->
-  <section id="work" class="section work">
+  <section id="work" class="section">
     <h2>Work Experience</h2>
-    <div class="work-item">
+
+    <div class="card">
       <h3>Customer Service Representative</h3>
-      <p>Foundever Baguio City | August 2021 - October 2023</p>
+      <p>Foundever, Baguio City</p>
+      <p>August 2021 – October 2023</p>
+    </div>
+
+    <div class="card">
+      <h3>ESL Teacher</h3>
+      <p>AcadSoc</p>
+      <p>January 2024 – February 2024</p>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="section skills">
+  <section id="skills" class="section">
     <h2>Skills</h2>
-    <ul>
+    <ul class="skills-list">
       <li>Communication Skills</li>
+      <li>Troubleshooting</li>
       <li>HTML & CSS</li>
       <li>Basic Python</li>
       <li>Git & GitHub</li>
@@ -75,21 +107,30 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="section projects">
+  <section id="projects" class="section">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Project Title</h3>
-      <p>Description of the project.</p>
+
+    <div class="card">
+      <h3>Basic PHP Activities</h3>
+      <p>
+        A collection of PHP exercises including a BMI calculator,
+        grade predictor, and basic form handling.
+      </p>
     </div>
   </section>
 
-  <!-- Contact Button -->
-  <section id="contact" class="section contact-section">
+  <!-- Contact -->
+  <section id="contact" class="section contact">
     <h2>Contact Me</h2>
-    <button id="contactButton">Contact Me</button>
+    <button id="contactButton">Send Message</button>
   </section>
+
 </main>
 
-<script src="script.js"></script> <!-- JavaScript file -->
+<footer class="footer">
+  <p>© 2026 Micaela Cruz. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

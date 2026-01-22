@@ -1,14 +1,13 @@
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
     e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+    document.querySelector(link.getAttribute('href'))
+      .scrollIntoView({ behavior: 'smooth' });
   });
 });
 
-// Optional: Add a click event for the contact button
-document.getElementById('contactButton').addEventListener('click', () => {
-  alert('Thank you for reaching out! Please email me at cruzelamica71@gmail.com.');
+// Contact button interaction
+document.getElementById("contactButton").addEventListener("click", () => {
+  alert("Thank you for reaching out!\nYou can email me at cruzelamica71@gmail.com");
 });
